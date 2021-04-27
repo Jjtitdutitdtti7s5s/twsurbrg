@@ -136,8 +136,8 @@ TW_INPUT_BLACKLIST := "hbtp_vm"
 TW_BRIGHTNESS_PATH := "/sys/class/backlight/panel0-backlight/brightness"
 TW_MAX_BRIGHTNESS := 2047
 TW_DEFAULT_BRIGHTNESS := 1200
-# TW_Y_OFFSET := 91
-# TW_H_OFFSET := -91
+TW_Y_OFFSET := 91
+TW_H_OFFSET := -91
 TWRP_INCLUDE_LOGCAT := true
 TARGET_USES_LOGD := true
 TARGET_USES_MKE2FS := true
@@ -148,51 +148,5 @@ TW_SKIP_COMPATIBILITY_CHECK := true
 TW_SUPPORT_INPUT_1_2_HAPTICS := true
 #
 
-#shrpify
-SHRP_DEVICE_CODE := surya
-SHRP_PATH := device/xiaomi/surya
-SHRP_REC_TYPE := Treble
-SHRP_MAINTAINER := BRock
-SHRP_FLASH := 1
-SHRP_FONP_1 := /sys/class/leds/led:torch_0/brightness
-SHRP_FONP_2 := /sys/class/leds/led:torch_1/brightness
-SHRP_FONP_3 := /sys/class/leds/led:switch/brightness
-SHRP_FLASH_MAX_BRIGHTNESS := 200
-SHRP_DEVICE_TYPE := SAR
-SHRP_DARK := true
-SHRP_REC := /dev/block/bootdevice/by-name/recovery
-SHRP_INTERNAL := /sdcard
-SHRP_EXTERNAL := /external_sd
-SHRP_OTG := /usb_otg
-SHRP_EDL_MODE := 1
-# SHRP_EXPRESS := true
-SHRP_NOTCH := true
-SHRP_STATUSBAR_RIGHT_PADDING := 30
-SHRP_STATUSBAR_LEFT_PADDING := 30
-SHRP_OFFICIAL := true
 
 
-SHRP_SKIP_DEFAULT_ADDON_4 := true
-
-INC_IN_REC_ADDON_1 := true
-INC_IN_REC_ADDON_2 := true
-INC_IN_REC_ADDON_3 := true
-INC_IN_REC_MAGISK := true
-
-# Add custom add-ons
-
-SHRP_EXTERNAL_ADDON_PATH := "device/xiaomi/surya/addons/"
-
-SHRP_EXTERNAL_ADDON_1_NAME := "Disable Force Encryption"
-SHRP_EXTERNAL_ADDON_1_INFO := "Disable Force Encryption in roms"
-SHRP_EXTERNAL_ADDON_1_FILENAME := "Disable_Dm-Verity_ForceEncrypt_20210320.zip"
-SHRP_EXTERNAL_ADDON_1_BTN_TEXT := "Disable"
-SHRP_EXTERNAL_ADDON_1_SUCCESSFUL_TEXT := "Disabled-Encryption Successfully"
-SHRP_INC_IN_REC_EXTERNAL_ADDON_1 := true
-
-SHRP_EXTERNAL_ADDON_2_NAME := "Stock Recovery Deactivation"
-SHRP_EXTERNAL_ADDON_2_INFO := "SHRP will not be replaced after flashing roms like miui with this patch"
-SHRP_EXTERNAL_ADDON_2_FILENAME := "Disable_Dm-Verity_Enfec_20210320.zip"
-SHRP_EXTERNAL_ADDON_2_BTN_TEXT := "Patch"
-SHRP_EXTERNAL_ADDON_2_SUCCESSFUL_TEXT := "Successful"
-SHRP_INC_IN_REC_EXTERNAL_ADDON_2 := true
