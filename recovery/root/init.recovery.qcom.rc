@@ -115,7 +115,7 @@ on property:sys.usb.config=fastboot
     start hwservicemanager
     restart fastbootd
 
-service vibrator-service /sbin/vendor.qti.hardware.vibrator@1.2-service
+service vibrator-service /system/bin/vendor.qti.hardware.vibrator@1.2-service
     user root
     group root
     disabled
