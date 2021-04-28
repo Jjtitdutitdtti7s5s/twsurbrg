@@ -35,9 +35,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.build.security_patch=2099-12-31
 
 
-PRODUCT_PACKAGES += \
-    qcom_decrypt \
-    qcom_decrypt_fbe
+#PRODUCT_PACKAGES += \
+#    qcom_decrypt \
+#    qcom_decrypt_fbe
     
     
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
